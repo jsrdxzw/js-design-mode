@@ -6,7 +6,7 @@
 
 ## How to use
 
-npm i & npm run dev
+`npm i --save & npm run dev`
 
 ## 何为设计
 1. 小即是美
@@ -26,4 +26,41 @@ npm i & npm run dev
    + 各部分之和大于整体
    + **寻求90%的方案**(不能满足所有人的需求)
    
+   
+## 五大设计原则
++ **S-单一职责原则**
+
++ **O-开放封闭原则(扩展新代码而不是修改已有代码)**
+
++ L-李式置换原则
+
++ I-接口独立原则
+
++ D-依赖导致原则   
+
+```
+function loadImg(src){
+    const promise = new Promise((resolve,reject)=>{
+          const img = document.createElement('img')
+          img.onload = ()=>{
+            resolve(img)
+          }   
+          img.onerror = ()=>{
+            reject('error')
+          }
+      }
+    )
+    return promise
+}
+const src = "http://..."
+const result = loadImg(src)
+result.then((img)=>{  //单一原则
+    //do something
+    return img
+}).then((img)=>{   // 开放封闭原则
+    //do another thing
+}).catch((err)=>{
+    //handle error
+})
+```
 
