@@ -10,11 +10,11 @@ class Adaptee {
     }
 }
 
-class Target {
+class Target {  //适配器
     constructor(){
         this.adaptee = new Adaptee()
     }
-    request(){
+    request(){ //适配
         const info = this.adaptee.specificRequest()
         console.log(`${info} - 转换器 - 中国标准插头`)
     }

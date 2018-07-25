@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/xuzhiwei/.nvm/versions/node/v8.11.3/bin/node /usr/local/bin/yarn run dev
+  /Users/xuzhiwei/.nvm/versions/node/v8.11.3/bin/node /usr/local/bin/yarn add babel-plugin-transform-decorators-legacy -
 
 PATH: 
   /Users/xuzhiwei/.nvm/versions/node/v8.11.3/bin:/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
@@ -26,14 +26,16 @@ npm manifest:
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "babel-core": "^6.26.3",
-      "babel-loader": "^7.1.5",   // webpack
-      "babel-polyfill": "^6.26.0",  //promise
-      "babel-preset-env": "^1.7.0",  //es2015,latest
       "html-webpack-plugin": "^3.2.0",
       "webpack": "^4.16.2",
       "webpack-cli": "^3.1.0",
       "webpack-dev-server": "^3.1.5"
+    },
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.5",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.7.0"
     }
   }
 
@@ -4525,10 +4527,14 @@ Lockfile:
       yargs-parser "^10.1.0"
 
 Trace: 
-  SyntaxError: /Users/xuzhiwei/开发文件/design/package.json: Unexpected token / in JSON at position 367
-      at JSON.parse (<anonymous>)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:770:59
-      at Generator.next (<anonymous>)
-      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
-      at <anonymous>
+  Error: https://registry.yarnpkg.com/-: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:62027:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:123011:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:123994:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:123914:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
