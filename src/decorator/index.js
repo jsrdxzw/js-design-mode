@@ -2,6 +2,7 @@
  * author: XU ZHI WEI
  * function: 装饰器模式
  * 场景: ES7装饰器 core-decorators(常用的装饰器)
+ * 独立 加入新的功能
  */
 
 class Circle{

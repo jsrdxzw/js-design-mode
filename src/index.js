@@ -20,5 +20,5 @@
 // const $p = $('p')
 // console.log($p)
 
-import './decorator/core-decorators'
+import './proxy/star-proxy'
 
