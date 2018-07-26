@@ -5,7 +5,7 @@
  */
 
 //保存状态，状态变化触发观察者对象
-class Subject {
+class Subject { // Observable
     constructor() {
         this.state = 0
         this.observers = [] //观察者
