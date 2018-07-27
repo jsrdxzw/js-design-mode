@@ -20,5 +20,5 @@
 // const $p = $('p')
 // console.log($p)
 
-import './state/promise'
+import './other/prototype'
 
