@@ -20,5 +20,5 @@
 // const $p = $('p')
 // console.log($p)
 
-import './proxy/star-proxy'
+import './state/promise'
 

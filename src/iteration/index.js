@@ -26,7 +26,6 @@ class Container {
     constructor(list) {
         this.list = list
     }
-
     getIterator() {
         return new Iterator(this)
     }
