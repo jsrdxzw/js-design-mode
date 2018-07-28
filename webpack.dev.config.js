@@ -24,6 +24,11 @@ module.exports = {
     devServer: {
         contentBase:path.join(__dirname,'build'), //根目录
         open:true, //浏览器自动打开
-        port:9000
+        port:9000,
+        proxy:{
+            '/api/*':{
+                target:'http://localhost:8880'
+            }
+        }
     }
 }

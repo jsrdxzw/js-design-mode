@@ -20,5 +20,10 @@
 // const $p = $('p')
 // console.log($p)
 
-import './other/prototype'
+import App from './demo/App'
+
+const app = new App('app')
+app.init()
+
+
 
