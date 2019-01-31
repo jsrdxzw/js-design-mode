@@ -36,7 +36,7 @@
 
 + I-接口独立原则
 
-+ D-依赖导致原则   
++ D-依赖倒置原则   
 
 ```
 function loadImg(src){
